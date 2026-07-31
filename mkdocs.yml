@@ -28,6 +28,7 @@ theme:
     - search.suggest            # Suggestions dans la recherche
     - search.highlight          # Surlignage des mots recherchés
     - content.code.copy         # Bouton pour copier les blocs de code
+    - toc.integrate
 
 markdown_extensions:
   - admonition                  # Encadrés pour notes/avertissements
