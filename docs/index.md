@@ -1,101 +1,50 @@
----
-title: Accueil
-nav_order: 1
----
+# 👨‍💻 Portfolio Technique & Documentation IT
 
+Bienvenue sur mon portfolio de documentation technique. 
 
-# 🧠 Wiki SysAdmin – Cédric Ambos
+Titulaire d'un **Titre Professionnel Technicien Supérieur Systèmes & Réseaux (Bac+2 - ENI)** et fort de **6 années d'expérience en milieu industriel**, j'allie rigueur opérationnelle, sens du service utilisateur et maîtrise des infrastructures informatiques.
 
----
-
-Bienvenue sur mon **Wiki d’administration systèmes et réseaux**.  
-Ce projet documente mes déploiements, mes expérimentations et mes connaissances autour des environnements **Windows Server**, **Debian**, et **infrastructures réseau**.
-
-Ce wiki me sert à la fois de :
-- 💼 **Portfolio professionnel**
-- 🧩 **Laboratoire d’expérimentation**
+Ce site rassemble les procédures, architectures et comptes-rendus techniques de mes projets et déploiements en environnement de laboratoire (Homelab).
 
 ---
 
-## 🧱 Structure du projet
-```
-admin-homelab/
-├── index.md → Page d’accueil du site
-├── about.md → Profil / contact
-│
-├── projets/
-│   ├── index.md                              # Introduction + méthodologie + contraintes (Hyper-V local)
-│   │
-│   ├── 01-logical-vlan-architecture.md       # 1 - Architecture réseau logique (VLANs documentés)
-│   ├── 02-pfsense-firewall.md                # 2 - Installation PfSense (routing + segmentation logique)
-│   │
-│   ├── 03-ad-infrastructure.md               # 3 - ADDS + File Server + Print Server + GPO/Hardening
-│   │
-│   ├── 04-dns-demo-infra.md                  # 4 - DNS Debian → Windows (zone demo.infra)
-│   ├── 05-dhcp-mixte.md                      # 5 - DHCP Windows + ISC Debian
-│   │
-│   ├── 06-pki-internal.md                    # 6 - PKI interne (certificats domaine)
-│   ├── 07-wapt-deployment.md                 # 7 - Déploiement et gestion logicielle (WAPT)
-│   │
-│   ├── 08-glpi-install.md                    # 8 - Installation GLPI + agents
-│   ├── 09-antivirus-central.md               # 9 - Serveur antivirus centralisé
-│   │
-│   ├── 10-exchange-deployment.md             # 10 - Exchange Server interne
-│   ├── 11-exchange-edge-dmz.md               # 11 - Exchange Edge en DMZ (DMZ virtuelle)
-│   │ 
-│   ├── 12-Contournement-cgnat.md             # 12 - VPS Cloud
-│   ├── 13-reverse-proxy.md                   # 13 - Reverse Proxy (Exchange OWA,autodiscover)
-│   │
-│   ├── 14-rds-deployment.md                  # 14 - RDS + RD Gateway + Broker
-│   │  
-│   ├── 15-free-pbx.md                       # 15 - FreePBX VoIP (architecture logique voix)
-│   │
-│   ├── 16-syslog-setup.md                    # 16 - Centralisation Syslog
-│   ├── 17-zabbix-monitoring.md               # 17 - Supervision Zabbix complète
-│   │
-│   ├── 18-network-security.md                # 18 - Sécurité réseau, firewall rules, DMZ logique
-│   │
-│   ├── 19-backup-strategy.md                 # 19 - Stratégie de sauvegarde (Bacula/Borg/Veeam)
-│   └── 20-documentation-scripts.md           # 20 - Scripts (PowerShell, Bash, PfSense, automatisation)
-│
-└── _config.yml → Configuration GitHub Pages
-```
----
+## 🎯 Objectif Professionnel
 
-## 🧰 Technologies utilisées
-
-- **Windows Server 2022**
-- **Debian 12 Bookworm**
-- **pfSense** (pare-feu et routage)
-- **PowerShell** pour l’automatisation
-- **Centreon / GLPI** pour la supervision et la gestion IT
-- **GitHub Pages + Markdown (Jekyll)** pour la documentation
+Je recherche un poste en **Support Informatique de Proximité**, **Gestionnaire de Parc** ou **Technicien Systèmes & Réseaux** au sein d'un client final (PME, Groupe Industriel, Collectivité Territoriale) sur le bassin de **Forbach / Saint-Avold / Sarreguemines**.
 
 ---
 
-## 📌 Objectifs du wiki
+## 🛠️ Compétences Clés
 
-- Créer un **guide complet d’installation et de configuration** pour chaque service
-- Centraliser les **bonnes pratiques** et les **procédures internes**
-- Faciliter le partage et la réutilisation de configurations dans d’autres environnements
-
----
-
-## 💡 Exemple de sujets couverts
-
-- 🪟 **Active Directory** : gestion des utilisateurs, GPO, réplication  
-- 🐧 **DHCP sous Debian** : configuration, réservations, logs  
-- 🔒 **pfSense et VLAN** : segmentation réseau, règles de sécurité  
-- 🧰 **GLPI / Centreon** : inventaire et supervision  
-- ☁️ **RDS / WDS / Exchange** *(à venir)*  
+- **Administration Systèmes :** Windows Server (ADDS, GPO, DNS, DHCP, AGDLP), Linux (Debian/Ubuntu).
+- **Réseau & Sécurité :** Architecture VLAN, Pare-feu (pfSense), VPN, Hardening de base.
+- **Support & Gestion de Parc :** GLPI, Inventaire automatisé, suivi d'incidents, support utilisateurs.
+- **Rigueur & Méthode :** Rédaction de procédures, gestion de projets techniques, culture sécurité/5S issue de l'industrie.
 
 ---
 
-## 📬 Contact
+## 📂 Mes Projets & Réalisations
 
-📧 cedric.ambos@gmail.com  
-💼 [LinkedIn](https://linkedin.com/in/cedric-ambos)  
-🐙 [GitHub](https://github.com/Ced-0)
+- **[Active Directory & Infrastructure](./projets/active-directory.md)** *(Ajustez le lien selon le nom exact de votre fichier)*  
+  Déploiement complet d'un domaine de production : ADDS, File Server (méthode AGDLP), Print Server et GPO.
+
+<!-- 
+Ajoutez ou modifiez les lignes ci-dessous selon vos vrais fichiers Markdown existants :
+
+- **[Nom de votre projet 2](./projets/nom-de-votre-fichier.md)**
+  Description rapide en une phrase.
+
+- **[Nom de votre projet 3](./projets/nom-de-votre-fichier-3.md)**
+  Description rapide en une phrase.
+-->
+
+---
+
+## 📱 Contact
+
+- 📍 **Localisation :** Bassin de Forbach (Moselle-Est) / Permis B
+- 📧 **Email :** `votre-email@exemple.com`
+- 💼 **LinkedIn :** [Mon Profil LinkedIn](https://www.linkedin.com)
 
 ---
 
