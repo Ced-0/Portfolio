@@ -1,0 +1,47 @@
+site_name: Portfolio Technique & Projets IT
+site_description: Documentation technique, déploiements d'infrastructures et gestion de projets IT.
+site_author: Cédric Ambos
+theme:
+  name: material
+  language: fr
+  palette:
+    # Palette mode clair
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Passer au mode sombre
+    # Palette mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Passer au mode clair
+  features:
+    - navigation.tabs           # Onglets de navigation en haut
+    - navigation.sections       # Groupement par sections
+    - navigation.top            # Bouton de retour en haut de page
+    - search.suggest            # Suggestions dans la recherche
+    - search.highlight          # Surlignage des mots recherchés
+    - content.code.copy         # Bouton pour copier les blocs de code
+
+markdown_extensions:
+  - admonition                  # Encadrés pour notes/avertissements
+  - pymdownx.details            # Blocs pliables/dépliables
+  - pymdownx.superfences        # Gestion avancée des blocs de code
+  - pymdownx.tasklist:          # Cases à cocher (checklists)
+      custom_checkbox: true
+  - tables                      # Support des tableaux HTML/Markdown
+
+# Structure du menu de navigation
+nav:
+  - Accueil: index.md
+  - Projets:
+      - Active Directory: projets/active-directory.md
+      # Ajoute tes autres fichiers Markdown ici :
+      # - Supervision Zabbix: projets/zabbix.md
+      # - Pare-feu pfSense: projets/pfsense.md
